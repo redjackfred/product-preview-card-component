@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+	--color-black: #1c232b;
+	--color-grey: #6c7289;
+	--color-cream: #f2eae2;
+	--color-white: #ffffff;
+	--color-green-500: #3d8168;
+	--color-green-700: #1a4032;
+	--spaciing-50: 4px;
+	--spacing-100: 8px;
+	--spacing-200: 16px;
+	--spacing-300: 24px;
+	--spacing-400: 32px;
+	--spacing-500: 40px;
+	--font-fraunces: "Fraunces", "sans-serif";
+	--font-montserrat: "Montserrat", "sans-serif";
+}
+
+@layer base {
+}
+
+@layer components {
+	.text-preset-1 {
+		font-size: 32px;
+		font-family: var(--font-fraunces);
+		font-weight: 700;
+		line-height: 100%;
+	}
+	.text-preset-2 {
+		font-size: 14px;
+		font-family: var(--font-montserrat);
+		font-weight: 700;
+		line-height: 110%;
+	}
+	.text-preset-3 {
+		font-size: 14px;
+		font-family: var(--font-montserrat);
+		font-weight: 500;
+		line-height: 160%;
+	}
+	.text-preset-4 {
+		font-size: 12px;
+		font-family: var(--font-montserrat);
+		font-weight: 500;
+		line-height: 120%;
+		letter-spacing: 5px;
+	}
+	.text-preset-5 {
+		font-size: 13px;
+		font-family: var(--font-montserrat);
+		font-weight: 500;
+		line-height: 120%;
+	}
+}
+
+@layer utilities {
+}

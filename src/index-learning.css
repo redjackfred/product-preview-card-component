@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* Custom variables */
+@theme {
+	--text-8xl: 15rem;
+	--color-custom-200: #123456;
+	--spacing-custom: 20rem;
+}
+
+/* For base tags */
+@layer base {
+	h3 {
+		font-size: var(--text-8xl);
+	}
+}
+
+/* Reusable Components for complex design*/
+@layer components {
+	.text-preset {
+		font-family: "Inter", sans-serif;
+		font-size: 6rem;
+		@apply hover:font-bold hover:text-gray-900;
+
+		@variant dark {
+			@apply hover:font-extralight hover:text-gray-100;
+		}
+	}
+	.text-preset-secondary {
+		font-family: "Inter", sans-serif;
+		font-size: 4rem;
+		@apply hover:font-extrabold hover:text-gray-300;
+	}
+}
+
+/* Atomic utilities*/
+@layer utilities {
+	.test {
+		@apply text-sm;
+	}
+}
